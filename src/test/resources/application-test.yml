@@ -1,0 +1,13 @@
+server:
+  port: 0
+
+spring:
+  main:
+    web-application-type: reactive
+  codec:
+    multipart:
+      enabled: true
+
+jwt:
+  secret: test-secret-change-me-change-me-change-me-32
+  expiresMinutes: 60
