@@ -1,4 +1,9 @@
 package com.crudapp.filestorage.dto;
 
-public record UserDto() {
-}
+import java.util.List;
+
+public record UserDto(
+        Integer id,
+        String username,
+        List<String> roles
+) {}

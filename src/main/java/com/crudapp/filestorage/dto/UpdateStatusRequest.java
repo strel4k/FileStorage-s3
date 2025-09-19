@@ -1,4 +1,8 @@
 package com.crudapp.filestorage.dto;
 
-public record UpdateStatusRequest() {
+import jakarta.validation.constraints.NotBlank;
+
+public record UpdateStatusRequest(
+        @NotBlank String status
+) {
 }

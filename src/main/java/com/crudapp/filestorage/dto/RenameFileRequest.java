@@ -1,4 +1,6 @@
 package com.crudapp.filestorage.dto;
 
-public record RenameFileRequest() {
+import jakarta.validation.constraints.NotBlank;
+
+public record RenameFileRequest(@NotBlank String name) {
 }

@@ -1,4 +1,5 @@
 package com.crudapp.filestorage.model;
 
-public class UserStatus {
+public enum UserStatus {
+    ACTIVE, BLOCKED
 }

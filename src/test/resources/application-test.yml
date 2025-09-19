@@ -11,3 +11,19 @@ spring:
 jwt:
   secret: test-secret-change-me-change-me-change-me-32
   expiresMinutes: 60
+
+
+s3:
+  endpoint: http://localhost:4566
+  accessKey: test
+  secretKey: test
+  region: us-east-1
+  bucket: it-bucket
+  publicBaseUrl: http://localhost:4566
+
+
+admin:
+  init:
+    username: admin
+    password: admin123
+    roles: ADMIN

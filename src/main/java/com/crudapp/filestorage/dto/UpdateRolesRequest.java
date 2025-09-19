@@ -1,4 +1,8 @@
 package com.crudapp.filestorage.dto;
 
-public record UpdateRolesRequest() {
+import java.util.List;
+
+public record UpdateRolesRequest(
+        List<String> roles
+) {
 }

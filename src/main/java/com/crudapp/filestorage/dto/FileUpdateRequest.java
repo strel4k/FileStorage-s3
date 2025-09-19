@@ -1,6 +1,7 @@
 package com.crudapp.filestorage.dto;
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 
-public record FileUpdatedRequest(@NotBlank String name) {
+public record FileUpdateRequest(@NotBlank @Size(min = 1, max = 255) String name) {
 }

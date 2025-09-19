@@ -1,4 +1,12 @@
 package com.crudapp.filestorage.api;
 
-public record ApiError() {
+import java.time.OffsetDateTime;
+
+public record ApiError(
+        int status,
+        String error,
+        String message,
+        String path,
+        OffsetDateTime timestamp
+) {
 }

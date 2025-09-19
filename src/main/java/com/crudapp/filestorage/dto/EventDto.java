@@ -1,4 +1,12 @@
 package com.crudapp.filestorage.dto;
 
-public record EventDto() {
-}
+import java.time.Instant;
+
+public record EventDto(
+        Integer id,
+        Integer userId,
+        Integer fileId,
+        String status,
+        String message,
+        Instant createdAt
+) {}

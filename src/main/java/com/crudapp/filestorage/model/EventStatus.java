@@ -1,5 +1,5 @@
 package com.crudapp.filestorage.model;
 
-public enum EventType {
+public enum EventStatus {
     CREATED, UPDATED, DELETED
 }
